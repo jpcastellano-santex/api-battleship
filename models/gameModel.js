@@ -4,8 +4,6 @@ var Users = require('./userModel');
 var Schema = mongoose.Schema;
 
 var gameSchema = new Schema({
-    // username: String,
-    // password: String
     owner: Users.schema,
     guest: Users.schema,
     turn: Users.schema,

@@ -39,7 +39,7 @@ module.exports = function (app) {
                 var newGame = Games({
                     owner: user,
                     turn: user,
-                    createdDate: new Date(),
+                    createdDate: new Date().getTime(),
                     ownerBoard: GameBoard.getRandomBoard(),
                     guestBoard: GameBoard.getRandomBoard()
                 });
